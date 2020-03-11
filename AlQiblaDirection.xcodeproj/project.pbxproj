@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		14E0FEF724193F3C00316851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FEF624193F3C00316851 /* AppDelegate.swift */; };
 		14E0FEF924193F3C00316851 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FEF824193F3C00316851 /* SceneDelegate.swift */; };
-		14E0FEFB24193F3C00316851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FEFA24193F3C00316851 /* ViewController.swift */; };
 		14E0FEFE24193F3C00316851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E0FEFC24193F3C00316851 /* Main.storyboard */; };
 		14E0FF0024193F3D00316851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E0FEFF24193F3D00316851 /* Assets.xcassets */; };
 		14E0FF0324193F3D00316851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E0FF0124193F3D00316851 /* LaunchScreen.storyboard */; };
+		14E0FF0B241941E800316851 /* CompassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FF0A241941E800316851 /* CompassVC.swift */; };
+		14E0FF0D24196ACA00316851 /* CLLocation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FF0C24196ACA00316851 /* CLLocation+Extension.swift */; };
+		14E0FF0F24196B2B00316851 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FF0E24196B2B00316851 /* LocationDelegate.swift */; };
+		14E0FF1124196C1600316851 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E0FF1024196C1600316851 /* UserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14E0FEF324193F3C00316851 /* AlQiblaDirection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlQiblaDirection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E0FEF624193F3C00316851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E0FEF824193F3C00316851 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		14E0FEFA24193F3C00316851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14E0FEFD24193F3C00316851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14E0FEFF24193F3D00316851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E0FF0224193F3D00316851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14E0FF0424193F3D00316851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E0FF0A241941E800316851 /* CompassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompassVC.swift; sourceTree = "<group>"; };
+		14E0FF0C24196ACA00316851 /* CLLocation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Extension.swift"; sourceTree = "<group>"; };
+		14E0FF0E24196B2B00316851 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
+		14E0FF1024196C1600316851 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				14E0FEF624193F3C00316851 /* AppDelegate.swift */,
 				14E0FEF824193F3C00316851 /* SceneDelegate.swift */,
-				14E0FEFA24193F3C00316851 /* ViewController.swift */,
 				14E0FEFC24193F3C00316851 /* Main.storyboard */,
 				14E0FEFF24193F3D00316851 /* Assets.xcassets */,
 				14E0FF0124193F3D00316851 /* LaunchScreen.storyboard */,
 				14E0FF0424193F3D00316851 /* Info.plist */,
+				14E0FF0A241941E800316851 /* CompassVC.swift */,
+				14E0FF0C24196ACA00316851 /* CLLocation+Extension.swift */,
+				14E0FF0E24196B2B00316851 /* LocationDelegate.swift */,
+				14E0FF1024196C1600316851 /* UserDefaults.swift */,
 			);
 			path = AlQiblaDirection;
 			sourceTree = "<group>";
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E0FEFB24193F3C00316851 /* ViewController.swift in Sources */,
+				14E0FF0F24196B2B00316851 /* LocationDelegate.swift in Sources */,
+				14E0FF0B241941E800316851 /* CompassVC.swift in Sources */,
 				14E0FEF724193F3C00316851 /* AppDelegate.swift in Sources */,
 				14E0FEF924193F3C00316851 /* SceneDelegate.swift in Sources */,
+				14E0FF1124196C1600316851 /* UserDefaults.swift in Sources */,
+				14E0FF0D24196ACA00316851 /* CLLocation+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
